@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>File Uploader - Google Drive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="fileupload.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="fileupload.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="wrapper" style="padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px;">
+      <div class="container bg-color">
+        <center><img src="logo.jpg" width="100" height="100" /></center>
+        <h1><center>Upload files to your Drive!</center></h1>
+        <div class="up-container">
+          <div class="bdr-container">
+            <input class="btn btn-secondary" id="upfiles" type="file" name="files[]" multiple />
+            <button class="btn btn-primary" id="up">Upload</button>
+            <div id="prog-wrp">
+              <div class="prog-bar"></div>
+              <div class="perc_status">0%</div>
+            </div>
+            <div id="result"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
